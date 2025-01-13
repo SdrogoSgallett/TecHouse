@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase Auth</title>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase Auth</title>
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js";
+        import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js";
+
+        // Configurazione Firebase
+        const firebaseConfig = {
+            apiKey: "AIzaSyA1Cou2hmM5VNOsfHqUqpF5GGclVqW5jeU",
+            authDomain: "authapptechouse.firebaseapp.com",
+            projectId: "authapptechouse",
+            storageBucket: "authapptechouse.appspot.com",
+            messagingSenderId: "924855965297",
+            appId: "1:924855965297:web:76ca4fad8382cc2c976dd0",
+            measurementId: "G-FCF82V0WH5"
+        };
+
+        // Inizializza Firebase
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+
+        function redirectToHome() {
+            window.location.href = "/frontend/index.html"; // Modifica il percorso con la tua home page
+        }
+
+        // Funzione per il sign-up
+        document.getElementById("btn-signup").addEventListener("click", async (event) => {
+            event.preventDefault();
+
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+
+            try {
+                // Creazione utente in Firebase Authentication
+                const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+                alert("Registrazione avvenuta con successo! Benvenuto: " + userCredential.user.email);
+
+                // Reindirizza alla home dopo il successo
+                redirectToHome();
+            } catch (error) {
+                alert("Errore nella registrazione: " + error.message);
+                console.error(error); // Stampa errori nella console del browser
+            }
+        });
+    </script>
+</head>
+<body>
+    <h1>Registrazione Firebase</h1>
+    <form id="auth-form">
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <button id="btn-signup">Sign Up</button>
+    </form>
+</body>
+</html>
+</head>
+</html>

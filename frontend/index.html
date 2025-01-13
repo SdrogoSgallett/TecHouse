@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+  <title>TechHouse</title>
+
+  <!-- General CSS Files -->
+  <link rel="stylesheet" href="assets/modules/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/modules/fontawesome/css/all.min.css">
+
+  <!-- CSS Libraries -->
+  <link rel="stylesheet" href="assets/modules/jqvmap/dist/jqvmap.min.css">
+  <link rel="stylesheet" href="assets/modules/summernote/summernote-bs4.css">
+  <link rel="stylesheet" href="assets/modules/owlcarousel2/dist/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="assets/modules/owlcarousel2/dist/assets/owl.theme.default.min.css">
+
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+<!-- Start GA -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-94034622-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-94034622-3');
+</script>
+<!-- /END GA --></head>
+
+<body>
+  <div id="app">
+    <div class="main-wrapper main-wrapper-1">
+      <div class="navbar-bg"></div>
+      <nav class="navbar navbar-expand-lg main-navbar">
+        <form class="form-inline mr-auto">
+          <ul class="navbar-nav mr-3">
+            <li><a href="#" data-toggle="sidebar" class="nav-link nav-link-lg"><i class="fas fa-bars"></i></a></li>
+          </ul>
+        </form>
+        <ul class="navbar-nav navbar-right">
+          <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown" class="nav-link notification-toggle nav-link-lg beep"><i class="far fa-bell"></i></a>
+            <div class="dropdown-menu dropdown-list dropdown-menu-right">
+              <div class="dropdown-header">Notifications
+                <div class="float-right">
+                  <a href="#">Mark All As Read</a>
+                </div>
+              </div>
+              <div class="dropdown-list-content dropdown-list-icons">
+              </div>
+              <div class="dropdown-footer text-center">
+                <a href="#">View All <i class="fas fa-chevron-right"></i></a>
+              </div>
+            </div>
+          </li>
+          <li class="dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
+            <img alt="image" src="assets/img/avatarProvvisorio.png" class="rounded-circle mr-1">
+            <div class="d-sm-none d-lg-inline-block">inserire l'user</div></a>
+            <div class="dropdown-menu dropdown-menu-right">
+              <a href="profile.html" class="dropdown-item has-icon">
+                <i class="far fa-user"></i> Profile
+              </a>
+              <a href="settings.html" class="dropdown-item has-icon">
+                <i class="fas fa-cog"></i> Settings
+              </a>
+              <a href="subscriber.html" class="dropdown-item has-icon">
+                <i class="far fa-user"></i> Subscriber
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item has-icon text-danger">
+                <i class="fas fa-sign-out-alt"></i> Logout
+              </a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <div class="main-sidebar sidebar-style-2">
+        <aside id="sidebar-wrapper">
+          <div class="sidebar-brand">
+            <a href="index.html">TechHouse</a>
+          </div>
+          <ul class="sidebar-menu">
+            <li class="menu-header">Dashboard</li>
+            <li class="dropdown active">
+              <a href="#" class="nav-link"><i class="fas fa-fire"></i><span>Dashboard</span></a>
+            </li>
+            <li class="menu-header">Pages</li>
+            <li class="dropdown">
+              <a href="#" class="nav-link has-dropdown"><i class="far fa-user"></i> <span>Auth</span></a>
+              <ul class="dropdown-menu"> 
+                <li><a href="login.html">Login</a></li> 
+                <li><a href="register.html">Register</a></li> 
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="nav-link has-dropdown"><i class="fas fa-bicycle"></i> <span>Features</span></a>
+              <ul class="dropdown-menu">
+                <li><a class="nav-link" href="profile.html">Profile</a></li>
+                <li><a class="nav-link" href="settings.html">Settings</a></li>
+                <li><a class="nav-link" href="subscriber.html">Subscriber</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="nav-link has-dropdown"><i class="fas fa-ellipsis-h"></i> <span>Utilities</span></a>
+              <ul class="dropdown-menu">
+                <li><a href="utilities-contact.html">Contact</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          </aside>
+      </div>
+
+      <!-- Main Content -->
+      <div class="main-content">
+        <section class="section">
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12">
+              <div class="card card-statistic-2">
+                <div class="card-stats">
+                  <div class="card-stats-title">mese - 
+                    <div class="dropdown d-inline">
+                      <a class="font-weight-600 dropdown-toggle" data-toggle="dropdown" href="#" id="orders-month">August</a>
+                      <ul class="dropdown-menu dropdown-menu-sm">
+                        <li class="dropdown-title">Select Month</li>
+                        <li><a href="#" class="dropdown-item">January</a></li>
+                        <li><a href="#" class="dropdown-item">February</a></li>
+                        <li><a href="#" class="dropdown-item">March</a></li>
+                        <li><a href="#" class="dropdown-item">April</a></li>
+                        <li><a href="#" class="dropdown-item">May</a></li>
+                        <li><a href="#" class="dropdown-item">June</a></li>
+                        <li><a href="#" class="dropdown-item">July</a></li>
+                        <li><a href="#" class="dropdown-item active">August</a></li>
+                        <li><a href="#" class="dropdown-item">September</a></li>
+                        <li><a href="#" class="dropdown-item">October</a></li>
+                        <li><a href="#" class="dropdown-item">November</a></li>
+                        <li><a href="#" class="dropdown-item">December</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="card-stats-items">
+                    <div class="card-stats-item">
+                      <div class="card-stats-item-count">1</div>
+                      <div class="card-stats-item-label">11</div>
+                    </div>
+                    <div class="card-stats-item">
+                      <div class="card-stats-item-count">2</div>
+                      <div class="card-stats-item-label">22</div>
+                    </div>
+                    <div class="card-stats-item">
+                      <div class="card-stats-item-count">3</div>
+                      <div class="card-stats-item-label">33</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-icon shadow-primary bg-primary">
+                  <i class="fas fa-archive"></i>
+                </div>
+                <div class="card-wrap">
+                  <div class="card-header">
+                    <h4>piccolo</h4>
+                  </div>
+                  <div class="card-body">
+                    grande
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+              <div class="card card-statistic-2">
+                <div class="card-chart">
+                  <canvas id="balance-chart" height="80"></canvas>
+                </div>
+                <div class="card-icon shadow-primary bg-primary">
+                  <i class="fas fa-dollar-sign"></i>
+                </div>
+                <div class="card-wrap">
+                  <div class="card-header">
+                    <h4>piccolo</h4>
+                  </div>
+                  <div class="card-body">
+                    grande
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+              <div class="card card-statistic-2">
+                <div class="card-chart">
+                  <canvas id="sales-chart" height="80"></canvas>
+                </div>
+                <div class="card-icon shadow-primary bg-primary">
+                  <i class="fas fa-shopping-bag"></i>
+                </div>
+                <div class="card-wrap">
+                  <div class="card-header">
+                    <h4>piccolo</h4>
+                  </div>
+                  <div class="card-body">
+                    grande
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-8">
+              <div class="card">
+                <div class="card-header">
+                  <h4>grafico</h4>
+                </div>
+                <div class="card-body">
+                  <canvas id="myChart" height="158"></canvas>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card gradient-bottom">
+                <div class="card-header">
+                  <h4>qualcosa</h4>
+                  <div class="card-header-action dropdown">
+                    <a href="#" data-toggle="dropdown" class="btn btn-danger dropdown-toggle">Month</a>
+                    <ul class="dropdown-menu dropdown-menu-sm dropdown-menu-right">
+                      <li class="dropdown-title">Select Period</li>
+                      <li><a href="#" class="dropdown-item">Today</a></li>
+                      <li><a href="#" class="dropdown-item">Week</a></li>
+                      <li><a href="#" class="dropdown-item active">Month</a></li>
+                      <li><a href="#" class="dropdown-item">This Year</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="card-body" id="top-5-scroll">
+                  <ul class="list-unstyled list-unstyled-border">
+                    <li class="media">
+                      <img class="mr-3 rounded" width="55" src="assets/img/" alt="product"> <!--da mettere l'immagine-->
+                      <div class="media-body">
+                        <div class="float-right"><div class="font-weight-600 text-muted text-small">coso a lato</div></div>
+                        <div class="media-title">nome principale</div>
+                        <div class="mt-1">
+                          <div class="">
+                            <div class="bg-primary" data-width="64%"></div>
+                            <div class="">sottonome</div>
+                          </div>
+                          <div class="">
+                            <div class="bg-danger" data-width="43%"></div>
+                            <div class="">sottosottonome</div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="card-footer pt-3 d-flex justify-content-center">
+                  <div class="justify-content-center">
+                    <div class="bg-primary" data-width="20"></div>
+                    <div class="">in fondo</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer class="main-footer">
+        <div class="footer-left">
+          Copyright &copy; 2025 <div class="bullet"></div> da fare il footer</a>
+        </div>
+        <div class="footer-right">
+          
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <!-- General JS Scripts -->
+  <script src="assets/modules/jquery.min.js"></script>
+  <script src="assets/modules/popper.js"></script>
+  <script src="assets/modules/tooltip.js"></script>
+  <script src="assets/modules/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/modules/nicescroll/jquery.nicescroll.min.js"></script>
+  <script src="assets/modules/moment.min.js"></script>
+  <script src="assets/js/script1.js"></script>
+  
+  <!-- JS Libraies -->
+  <script src="assets/modules/jquery.sparkline.min.js"></script>
+  <script src="assets/modules/chart.min.js"></script>
+  <script src="assets/modules/owlcarousel2/dist/owl.carousel.min.js"></script>
+  <script src="assets/modules/summernote/summernote-bs4.js"></script>
+  <script src="assets/modules/chocolat/dist/js/jquery.chocolat.min.js"></script>
+
+  <!-- Page Specific JS File -->
+  <script src="assets/js/page/index.js"></script>
+  
+  <!-- Template JS File -->
+  <script src="assets/js/scripts.js"></script>
+  <script src="assets/js/custom.js"></script>
+</body>
+</html>

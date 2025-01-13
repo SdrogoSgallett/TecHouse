@@ -1,0 +1,18 @@
+per provare se l'mqtt funziona (e funziona) devo usare il publisher che c'è già fatto in hivemq e guardare la console di questo server per vedere se il messaggio è stato ricevuto o no
+per vedere però devo prima andare a sottoscrivermi nel topic giusto con la pagina subscriber.html
+come penso di voler fare in futuro:
+mi salvo sul database a quali topic si vuole iscrivere un utente (potrà anche modificarli) e poi con un foreach nel file servizio subscriber mi sottoscrivo in automatico quando avvio il server a tutti quelli salvati (quindi alla fine la fatica di giorni e giorni per dividere il backend dal frontend non è andata totalmente sprecata anche se mi manca ancora da capire come poter fare per spostarmi di pagina in pagina con la separazione)
+
+per il momento di grafica non ho fatto niente e tutto quello che ho fatto è stato concentrarmi sul far funzionare il backend e sul far dividere il frontend dal backend (anche se quest'ultima cosa mi ci ha impiegato un sacco di tempo e alla fine non è servito a niente perchè quelle pagine servono solo per debug e lo ho realizzato adesso)
+
+
+versione 0.5
+ho implementato il fatto che un utente può iscriversi a più topic e ho rotto tutta la grafica, ma tanto andrà cambiata lo stesso
+messo a posto il fatto che quando riaggiornavo la pagina perdevo la visualizzazione dei topic a cui ero iscritto prima
+
+versione 0.6
+sistemato meglio il router
+implementato il database e il salvataggio dei dati
+
+da aggiungere in futuro:
+quando aggiungeremo gli utenti salvare nel database la coppia utente e topic sottoscritti
